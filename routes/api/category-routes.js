@@ -8,9 +8,9 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
   try {
     res.status(200).json(await Category.findAll());
-} catch(err) {
-    res.status(500).json(err);
-}
+  } catch(err) {
+      res.status(500).json(err);
+  }
 });
 
 router.get('/:id', async (req, res) => {
