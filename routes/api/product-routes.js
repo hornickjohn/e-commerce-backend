@@ -27,7 +27,7 @@ router.get('/:id', async (req, res) => {
     if(result) {
         res.status(200).json(result);
     } else {
-        res.status(404).send('Location not found.');
+        res.status(404).json('Product not found.');
     }
   } catch(err) {
       res.status(500).json(err);

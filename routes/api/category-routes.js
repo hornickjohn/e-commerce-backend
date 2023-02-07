@@ -25,7 +25,7 @@ router.get('/:id', async (req, res) => {
     if(result) {
         res.status(200).json(result);
     } else {
-        res.status(404).send('Location not found.');
+        res.status(404).json('Category not found.');
     }
   } catch(err) {
       res.status(500).json(err);
@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
     res.status(201).json(categoryData);
   } catch (err) {
     if(!req.body.category_name) {
-      res.status(400).send('Bad request - include category_name');
+      res.status(400).json('Bad request - include category_name');
     } else {
       res.status(500).json(err);
     }
