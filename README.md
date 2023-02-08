@@ -13,7 +13,28 @@ This server code runs a crud-functional RESTFUL API for product information, all
 
 ## Installation
 
-To start a new server locally: clone the repo, add a .env file with DB_NAME, DB_USER, and DB_PASSWORD properties, run npm install
+To start a new server locally: 
+
+<ul>
+    <li>
+    Clone the repository.
+    </li>
+    <li>
+    Add a .env file with: DB_NAME, DB_USER, DB_PASSWORD to match your mysql setup and chosen database name.
+    </li>
+    <li>
+    Run 'npm install' to get dependencies locally.
+    </li>
+    <li>
+    Use mysql shell to run db/schema.sql.
+    </li>
+    <li>
+    Run 'npm run seed' for initial test data if desired.
+    </li>
+    <li>
+    Run 'npm start' to fire up the server.
+    </li>
+</ul>
 
 ## Usage
 
